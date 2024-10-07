@@ -6,7 +6,7 @@
 
 body, html {
   height: 100%;
-  font-family: 'Arial', sans-serif;
+  font-family: 'Open Sans';
 }
 
 body {
@@ -14,32 +14,122 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  min-height: 150vh; 
 }
 
+header {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 32px;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.navbar {
+  flex-grow: 1;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 20px;
+  margin-bottom: 30px;
+  padding: 5px 0;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 15px;
+  font-family: 'Open Sans';
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+  background-color: rgba(255, 255, 255, 0.2)
+}
 .container {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100%;
+  flex-direction: column;
 }
 
-.content {
-  background: rgba(4, 247, 255, 0.85);
+.content-main{
+  background: rgba(2, 100, 120, 0.6);
   border-radius: 10px;
-  padding: 40px;
+  padding: 30px;
   max-width: 600px;
   text-align: center;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  line-height: 30px;
+  margin-top: 80px;
+  font-family: 'Open Sans';
 }
 
 h1 {
-  font-size: 36px;
-  color: #333;
+  font-size: 56px;
+  color: #ffffff;
   margin-bottom: 20px;
 }
 
 p {
   font-size: 18px;
   line-height: 1.6;
-  color: #555;
+  color: aqua;
+}
+.stars-img{
+  display: flex;
+  justify-content: space-between;
+}
+.stars-img img{
+  width: 100px;
+}
+.content img {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+  font-family: 'Open Sans';
+}
+
+.text h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.text p {
+  font-size: 18px;
+  line-height: 1.6;
+  color:rgba(0, 0, 0, 0.6);
+}
+.content{
+  display: flex;
+  flex-direction: row;
+  background: rgba(4, 247, 255, 0.85);
+  border-radius: 10px;
+  padding: 30px;
+  max-width: 800px;
+  text-align: center;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  gap: 20px;
+  line-height: 30px;
+  margin-top: 80px;
+  font-family: 'Open Sans';
 }
