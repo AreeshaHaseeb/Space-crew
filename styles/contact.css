@@ -1,0 +1,84 @@
+body {
+  background-color: black;
+  color: #7ba376;
+  font-family: "Sofadi One", system-ui;
+  font-weight: 400;
+  font-style: normal
+}
+
+h1 {
+  font-size: 80px;
+  text-align: center;
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.7); /* Transparent background */
+  width: 100%; /* Full width */
+  padding: 10px 0; /* Padding for the header */
+  display: flex; /* Flexbox for layout */
+  justify-content: space-between; /* Space between elements */
+  align-items: center; /* Center items vertically */
+}
+
+.navbar {
+  flex-grow: 1; /* Allow navbar to grow */
+  margin: 10px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex; /* Flexbox for navigation items */
+  justify-content: space-between; /* Space between Home and other items */
+  margin: 0 20px; /* Margin for spacing */
+}
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 15px; /* Padding around links */
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+  background-color: rgba(255, 255, 255, 0.2); /* Background on hover */
+}
+
+p {
+  font-size: 15px;
+  justify-content: center;
+  text-align: center;
+}
+
+.form-card {
+  display: grid ;
+  justify-content: space-around;
+  text-align:center;
+  font-size: 30px;
+}
+
+button {
+  background-color: #7ba376;
+  border-radius: 5px;
+  font-size: 20px;
+  width: 100px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.7;
+}
+
+
+button:active {
+  background-color:greenyellow;
+  color: white;
+}
+
+::placeholder {
+  font-size: 20px;
+  background-color: #7ba376;
+}
+
+::placeholder:active {
+  background-color: #7ba376;
+}
