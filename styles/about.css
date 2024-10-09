@@ -20,8 +20,8 @@ body {
 header {
   background-color: rgba(0, 0, 0, 0.7);
   width: 100%;
-  height: 32px;
-  padding: 10px 0;
+  height: 42px;
+  padding: 5px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -36,7 +36,7 @@ header {
   list-style: none;
   display: flex;
   justify-content: space-between;
-  margin: 0 20px;
+  margin: 25px 20px;
   margin-bottom: 30px;
   padding: 5px 0;
 }
@@ -87,13 +87,6 @@ p {
   line-height: 1.6;
   color: aqua;
 }
-.stars-img{
-  display: flex;
-  justify-content: space-between;
-}
-.stars-img img{
-  width: 100px;
-}
 .content img {
   width: 300px;
   height: auto;
@@ -132,4 +125,60 @@ p {
   line-height: 30px;
   margin-top: 80px;
   font-family: 'Open Sans';
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0;
+  background: rgba(0, 0, 0, 0.7);
+  margin-top: 50px;
+}
+
+.footer h2 {
+  font-size: 28px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.footer-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.footer-container {
+  background-color: rgba(4, 100, 120, 0.85);
+  border-radius: 10px;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.footer-container:hover {
+  background-color: rgba(4, 100, 120, 1);
+  transform: translateY(-5px);
+}
+
+.footer-container h3 {
+  font-size: 22px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.footer-container a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.footer-container a:hover {
+  background-color: rgba(0, 0, 0, 0.6);
 }
